@@ -20,6 +20,18 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        private void buttonClose_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+        private void buttonClose_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonClose.Opacity = .6; buttonClose.Background = (Brush)new BrushConverter().ConvertFrom("#FF343436");
+        }
+        private void buttonClose_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonClose.Opacity = .3; buttonClose.Background = (Brush)new BrushConverter().ConvertFrom("#FF242426");
+        }
         public MainWindow()
         {
             InitializeComponent();
