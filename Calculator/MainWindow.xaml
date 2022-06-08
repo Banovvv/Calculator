@@ -48,7 +48,7 @@
                             Text="X"
                             MouseEnter="ButtonClose_MouseEnter"
                             MouseLeave="ButtonClose_MouseLeave"
-                            MouseLeftButtonDown="buttonClose_MouseLeftButtonDown"
+                            MouseLeftButtonDown="ButtonClose_MouseLeftButtonDown"
                             FontSize="16" Background="#2f2939" Foreground="White"
                             Opacity="0.5" Margin="1,0,0,0" Grid.Column="1"/>
                     </Grid>
