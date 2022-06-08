@@ -44,28 +44,33 @@
                             Opacity="0.5" FontSize="16" VerticalAlignment="Center"/>
 
                         <TextBlock
-                            Name="buttonClose" Padding="8.6 0 6.3 0" 
+                            Name="buttonClose" Padding="8.6 0 6.3 10" 
                             Text="X" MouseEnter="buttonClose_MouseEnter"
                             MouseLeave="buttonClose_MouseLeave"
                             MouseLeftButtonDown="buttonClose_MouseLeftButtonDown"
-                            FontSize="20" Background="#2f2939" Foreground="White"
+                            FontSize="16" Background="#2f2939" Foreground="White"
                             Opacity="0.5" Margin="1,0,0,0" Grid.Column="1"/>
                     </Grid>
                 </Border>
                 <TextBox
                 Foreground="#1f1c26" Background="#1f1c26" BorderThickness="0"/>
 
-                <TextBox
+                <Border                    
+                    Margin="0" Padding="5"
+                    BorderThickness="0"
+                    Background="#2f2939"
+                    CornerRadius="8">
+                    <TextBox
                 TextAlignment="Right" Name="display" Foreground="White"
                 Background="#2f2939" Text="0" IsReadOnly="True"
-                Padding="15" Margin="0 0 0 5" FontSize="30" BorderThickness="0" Height="70"/>
-
-                <!--<TextBox
+                Padding="10" Margin="0 0 0 5" FontSize="30" BorderThickness="0" Height="60"/>
+                </Border>
+                <TextBox
                 Name="clarifier" Text="" IsReadOnly="True"
                 Padding="4 0" Background="{x:Null}" Foreground="White"
-                BorderThickness="0" Opacity=".4"/>-->
+                BorderThickness="0" Opacity=".4"/>
 
-                <Grid Margin="0,0" Height="400" Width="329">
+                <Grid Margin="0,0" Height="395" Width="335">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
