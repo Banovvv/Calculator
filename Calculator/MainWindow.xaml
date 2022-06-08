@@ -86,6 +86,8 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
+
+                    <!--ROW 1-->
                     
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8" Grid.Row="6" Grid.Column="0">
@@ -119,7 +121,7 @@
                            FontSize="17" Background="#2f2939" Text="="/>
                     </Border>
 
-
+                    <!--ROW 2-->
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8" Grid.Row="5" Grid.Column="0">
@@ -153,6 +155,40 @@
                            FontSize="17" Background="#2f2939" Text="+"/>
                     </Border>
 
+                    <!--ROW 2-->
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8" Grid.Row="4" Grid.Column="0">
+                        <TextBlock Name="button_Eigth" TextAlignment="Center" Padding="0 13" Margin="1"
+                           MouseEnter="button_Zero_MouseEnter" MouseLeave="button_MouseLeave"
+                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="4"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8" Grid.Row="4" Grid.Column="1">
+                        <TextBlock Name="button_Nine" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave"
+                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="5"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8"  Grid.Row="4" Grid.Column="2">
+                        <TextBlock Name="button_ten" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
+                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="6"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8"  Grid.Row="4" Grid.Column="3">
+                        <TextBlock Name="button_Eleven" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
+                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="-"/>
+                    </Border>
+                    
                 </Grid>
             </StackPanel>
 
