@@ -14,8 +14,8 @@
         Visibility="Visible"
         WindowStyle="None"
         AllowsTransparency="True">
-
-    <Border
+    <Grid>
+        <Border
         Padding='10 0 10 1'
         BorderThickness="0"
         IsEnabled="False"
@@ -23,73 +23,134 @@
         BorderBrush="Black"
         Background="#1f1c26">
 
-        
-        <StackPanel Margin="-5,5,-5,5">
+            <StackPanel Margin="-5,5,-5,5" Visibility="Visible" Orientation="Vertical">
+                <Border                    
+                    Margin="0" Padding="5"
+                    BorderThickness="0"
+                    Background="#2f2939"
+                    CornerRadius="8">
+                    <Grid
+                        Background="#2f2939"
+                        Name="top" Height="25">
 
-            <Grid
-                Name="top"
-                Background="#2f2939"
-                Height="30">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                
-                <TextBlock
-                Foreground="White" Text="Calculator"
-                Margin="0,5,156,5" Padding="10 0"
-                Opacity="0.5" FontSize="16"/>
-                
-                <TextBlock
-                    Name="buttonClose" Padding="8.6 0 6.3 0" 
-                    Text="X" MouseEnter="buttonClose_MouseEnter"
-                    MouseLeave="buttonClose_MouseLeave"
-                    MouseLeftButtonDown="buttonClose_MouseLeftButtonDown"
-                    FontSize="20" Background="#2f2939" Foreground="White"
-                    Opacity="0.5" Margin="1,0,0,0" Grid.Column="1"/>
-            </Grid>
-            <TextBox
-                Foreground="#1f1c26" Background="#1f1c26" BorderThickness="0"/>            
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-            <TextBox
+                        <TextBlock
+                            Foreground="White" Text="Calculator"
+                            Margin="0,5,156,5" Padding="10 0"
+                            Opacity="0.5" FontSize="16" VerticalAlignment="Center"/>
+
+                        <TextBlock
+                            Name="buttonClose" Padding="8.6 0 6.3 0" 
+                            Text="X" MouseEnter="buttonClose_MouseEnter"
+                            MouseLeave="buttonClose_MouseLeave"
+                            MouseLeftButtonDown="buttonClose_MouseLeftButtonDown"
+                            FontSize="20" Background="#2f2939" Foreground="White"
+                            Opacity="0.5" Margin="1,0,0,0" Grid.Column="1"/>
+                    </Grid>
+                </Border>
+                <TextBox
+                Foreground="#1f1c26" Background="#1f1c26" BorderThickness="0"/>
+
+                <TextBox
                 TextAlignment="Right" Name="display" Foreground="White"
                 Background="#2f2939" Text="0" IsReadOnly="True"
                 Padding="15" Margin="0 0 0 5" FontSize="30" BorderThickness="0" Height="70"/>
-            
-            <TextBox
+
+                <!--<TextBox
                 Name="clarifier" Text="" IsReadOnly="True"
                 Padding="4 0" Background="{x:Null}" Foreground="White"
-                BorderThickness="0" Opacity=".4"/>
+                BorderThickness="0" Opacity=".4"/>-->
 
-            <Grid Margin="-1,10" Height="387" Width="329">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <TextBlock Name="button_Zero" TextAlignment="Center" Padding="0 24" Margin="1"
+                <Grid Margin="0,0" Height="400" Width="329">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8" Grid.Row="6" Grid.Column="0">
+                        <TextBlock Name="button_Zero" TextAlignment="Center" Padding="0 13" Margin="1"
                            MouseEnter="button_Zero_MouseEnter" MouseLeave="button_MouseLeave"
                            MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
-                           FontSize="17" Background="#2f2939" Text="0" Grid.Row="4" Grid.Column="0"/>
-                <TextBlock Name="button_One" TextAlignment="Center" Padding="0 24" Margin="1" 
+                           FontSize="17" Background="#2f2939" Text="+/-"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8" Grid.Row="6" Grid.Column="1">
+                        <TextBlock Name="button_One" TextAlignment="Center" Padding="0 13" Margin="1" 
                            MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave"
                            MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
-                           FontSize="17" Background="#2f2939" Text="1" Grid.Row="4" Grid.Column="1"/>
-                <TextBlock Name="button_Two" TextAlignment="Center" Padding="0 24" Margin="1" 
+                           FontSize="17" Background="#2f2939" Text="0"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8"  Grid.Row="6" Grid.Column="2">
+                        <TextBlock Name="button_Two" TextAlignment="Center" Padding="0 13" Margin="1" 
                            MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
                            MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
-                           FontSize="17" Background="#2f2939" Text="2" Grid.Row="4" Grid.Column="2"/>
+                           FontSize="17" Background="#2f2939" Text="."/>
+                    </Border>
 
-            </Grid>            
-        </StackPanel>
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8"  Grid.Row="6" Grid.Column="3">
+                        <TextBlock Name="button_Three" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
+                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="="/>
+                    </Border>
 
-    </Border>
+
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8" Grid.Row="5" Grid.Column="0">
+                        <TextBlock Name="button_Four" TextAlignment="Center" Padding="0 13" Margin="1"
+                           MouseEnter="button_Zero_MouseEnter" MouseLeave="button_MouseLeave"
+                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="1"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8" Grid.Row="5" Grid.Column="1">
+                        <TextBlock Name="button_Five" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave"
+                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="2"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8"  Grid.Row="5" Grid.Column="2">
+                        <TextBlock Name="button_Six" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
+                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="3"/>
+                    </Border>
+
+                    <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
+                        CornerRadius="8"  Grid.Row="5" Grid.Column="3">
+                        <TextBlock Name="button_Seven" TextAlignment="Center" Padding="0 13" Margin="1" 
+                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
+                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                           FontSize="17" Background="#2f2939" Text="+"/>
+                    </Border>
+
+                </Grid>
+            </StackPanel>
+
+        </Border>
+    </Grid>
 </Window>
