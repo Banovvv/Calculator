@@ -44,9 +44,10 @@
                             Opacity="0.5" FontSize="16" VerticalAlignment="Center"/>
 
                         <TextBlock
-                            Name="buttonClose" Padding="8.6 0 6.3 10" 
-                            Text="X" MouseEnter="buttonClose_MouseEnter"
-                            MouseLeave="buttonClose_MouseLeave"
+                            Name="ButtonClose" Padding="8.6 0 6.3 10" 
+                            Text="X"
+                            MouseEnter="ButtonClose_MouseEnter"
+                            MouseLeave="ButtonClose_MouseLeave"
                             MouseLeftButtonDown="buttonClose_MouseLeftButtonDown"
                             FontSize="16" Background="#2f2939" Foreground="White"
                             Opacity="0.5" Margin="1,0,0,0" Grid.Column="1"/>
@@ -90,33 +91,33 @@
                     
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8" Grid.Row="5" Grid.Column="0">
-                        <TextBlock Name="buttonPlusMinus" TextAlignment="Center" Padding="0 16" Margin="1"
-                           MouseEnter="button_Zero_MouseEnter" MouseLeave="button_MouseLeave"
-                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                        <TextBlock Name="ButtonPlusMinus" TextAlignment="Center" Padding="0 16" Margin="1"
+                           MouseEnter="ButtonPlusMinus_MouseEnter" MouseLeave="ButtonPlusMinus_MouseLeave"
+                           MouseLeftButtonDown="ButtonPlusMinus_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="+/-"/>
                     </Border>
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8" Grid.Row="5" Grid.Column="1">
-                        <TextBlock Name="buttonZero" TextAlignment="Center" Padding="0 16" Margin="1" 
-                           MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave"
-                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                        <TextBlock Name="ButtonZero" TextAlignment="Center" Padding="0 16" Margin="1" 
+                           MouseEnter="ButtonZero_MouseEnter" MouseLeave="ButtonZero_MouseLeave"
+                           MouseLeftButtonDown="ButtonZero_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="0"/>
                     </Border>
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8"  Grid.Row="5" Grid.Column="2">
-                        <TextBlock Name="buttonDot" TextAlignment="Center" Padding="0 16" Margin="1" 
-                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
-                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                        <TextBlock Name="ButtonDot" TextAlignment="Center" Padding="0 16" Margin="1" 
+                           MouseEnter="ButtonDot_MouseEnter" MouseLeave="ButtonDot_MouseLeave"
+                           MouseLeftButtonDown="ButtonDot_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="."/>
                     </Border>
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8"  Grid.Row="5" Grid.Column="3">
-                        <TextBlock Name="buttonEquals" TextAlignment="Center" Padding="0 16" Margin="1" 
-                           MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
-                           MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
+                        <TextBlock Name="ButtonEquals" TextAlignment="Center" Padding="0 16" Margin="1" 
+                           MouseEnter="ButtonEquals_MouseEnter" MouseLeave="ButtonEquals_MouseLeave"
+                           MouseLeftButtonDown="ButtonEquals_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="="/>
                     </Border>
 
@@ -124,23 +125,23 @@
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8" Grid.Row="4" Grid.Column="0">
-                        <TextBlock Name="buttonOne" TextAlignment="Center" Padding="0 16" Margin="1"
-                           MouseEnter="button_Zero_MouseEnter" MouseLeave="button_MouseLeave"
-                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                        <TextBlock Name="ButtonOne" TextAlignment="Center" Padding="0 16" Margin="1"
+                           MouseEnter="ButtonOne_MouseEnter" MouseLeave="ButtonOne_MouseLeave"
+                           MouseLeftButtonDown="ButtonOne_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="1"/>
                     </Border>
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8" Grid.Row="4" Grid.Column="1">
-                        <TextBlock Name="buttonTwo" TextAlignment="Center" Padding="0 16" Margin="1" 
-                           MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave"
-                           MouseLeftButtonDown="btn_MouseLeftButtonDown" Foreground="White"
+                        <TextBlock Name="ButtonTwo" TextAlignment="Center" Padding="0 16" Margin="1" 
+                           MouseEnter="ButtonTwo_MouseEnter" MouseLeave="ButtonTwo_MouseLeave"
+                           MouseLeftButtonDown="ButtonTwo_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="2"/>
                     </Border>
 
                     <Border Margin="2,2,2,2" Padding="1" BorderThickness="0" Background="#2f2939"
                         CornerRadius="8"  Grid.Row="4" Grid.Column="2">
-                        <TextBlock Name="buttonThree" TextAlignment="Center" Padding="0 16" Margin="1" 
+                        <TextBlock Name="ButtonThree" TextAlignment="Center" Padding="0 16" Margin="1" 
                            MouseEnter="button_Two_MouseEnter" MouseLeave="button_Two_MouseLeave"
                            MouseLeftButtonDown="button_Two_MouseLeftButtonDown" Foreground="White"
                            FontSize="17" Background="#2f2939" Text="3"/>
